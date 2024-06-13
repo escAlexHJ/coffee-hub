@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Page</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .boady {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-container .image-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .image-container:hover .image-text {
+      opacity: 1;
+    }
+
+    .black-rectangle {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    .container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 100px;
+
+    }
+    .instructions {
+        flex-grow: 1;
+    }
+    .box {
+        border: 6px solid #000;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    .image {
+        margin-left: 20px;
+    }
+    .image img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .title-container {
+        text-align: center;
+        background-color: #f9f9f9;
+        border: 2px solid #000;
+        padding: 10px;
+        margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black w3-center">
+      <div class="w3-col s4">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s4">
+        <a href="Coffee.html" class="w3-button w3-block w3-black">HOMEMADE COFFEE</a>
+      </div>
+      <div class="w3-col s4">
+        <a href="CoffeeSpots.html" class="w3-button w3-block w3-black">MY FAV COFFEE SPOTS</a>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- Photo grid -->
+<div class="w3-row w3-grayscale-min">
+  <div class="w3-quarter">
+    <div class="image-container">
+      <img src="https://heartofthecity.co.nz/sites/default/files/styles/hotc_small/public/2023-11/IMG_3801_0.JPG?itok=iKD2WhKD" alt="Canoeing again">
+      <div class="image-text">Coffee Corner</div>
+    </div>
+    <div class="image-container">
+      <img src="https://lh3.googleusercontent.com/p/AF1QipPdmw7TIEPUV0HZ-Z-ll6GyZceBREuIaWN46EF5=s1360-w1360-h1020" alt="Quiet day at the beach. Cold, but beautiful">
+      <div class="image-text">St Heliers Home Cookery</div>
+    </div>
+    <div class="image-container">
+      <img src="https://heartofthecity.co.nz/sites/default/files/styles/social_media/public/2021-03/Little-Albert-Coffee-1.JPG?itok=V1272nCi" alt="The Beach. Me. Alone. Beautiful">
+      <div class="image-text">Little Albert Coffee</div>
+    </div>
+  </div>
+  
+  <div class="w3-quarter">
+    <div class="image-container">
+      <img src="https://images.localista.com.au/eatingout/657038_lrg.jpg" alt="A girl, and a train passing">
+      <div class="image-text">Better Me Espresso Cafe</div>
+    </div>
+    <div class="image-container">
+      <img src="https://sprudge.com/wp-content/uploads/2018/05/Eightthirty_Auckland_AnzacRoastery_Peter_deVooght_02-1170x780.jpg" alt="Waiting for the bus in the desert">
+      <div class="image-text">Eighthirty Coffee Roasters</div>
+    </div>
+    <div class="image-container">
+      <img src="https://kakapobusiness.co.nz/imager/media/48155/EdenEspresso_Web8_KakapoBusinessSales_63440610ff722802cdfce81a72e178cc.jpg" alt="Nature again.. At its finest!">
+      <div class="image-text">Eden Espresso Bar</div>
+    </div>
+  </div>
+  
+  <div class="w3-quarter">
+    <div class="image-container">
+      <img src="https://10619-2.s.cdn12.com/rests/original/102_512901430.jpg" alt="Waiting for the bus in the desert">
+      <div class="image-text">Kompass Coffee</div>
+    </div>
+    <div class="image-container">
+      <img src="https://www.thedenizen.co.nz/wp-content/uploads/2022/05/Post-24.jpg" alt="What a beautiful scenery this sunset">
+      <div class="image-text">Rumours Coffee</div>
+    </div>
+    <div class="image-container">
+      <img src="https://64.media.tumblr.com/734e4d1be21aedc7a1307396af287978/27e522486e57e589-93/s1280x1920/c11685cde6ecf9ef68a680138737e380e7afc427.jpg" alt="The Beach. Me. Alone. Beautiful">
+      <div class="image-text">The EOS Coffee</div>
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="image-container">
+      <img src="https://images.localista.com.au/eatingout/667679_lrg.jpg" alt="A boy surrounded by beautiful nature">
+      <div class="image-text">Ground Coffee</div>
+    </div>
+    <div class="image-container">
+      <img src="https://64.media.tumblr.com/d317aecfdd3beb1b6662206bfd126196/928c2120512b3542-7c/s1280x1920/d2cd87a86ec7fb5d4881f501ae6564389ea09bf4.jpg" alt="A girl, and a train passing">
+      <div class="image-text">Receptionist Coffee</div>
+    </div>
+    <div class="image-container">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn3y7MArZML_uGyz_v-ZvZETFGEsj5VRaZxwvzvFhNPNIFE0bfKw73J6yfV4l-nR17XVBS0SvfjP5zqs2TdSIz-RJgbPEU1W1TueZN6V905xNKr4Gf6-OttcXnZskBpkc2X735esxAgeoj/s1600/arkandsupreme+(10+of+1).jpg" alt="Quiet day at the beach. Cold, but beautiful">
+      <div class="image-text">ARK Coffee</div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
